@@ -3,12 +3,12 @@ MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ## Version
 ENV JIRA_MAJOR   7
-ENV JIRA_VERSION 7.1.1
+ENV JIRA_VERSION 7.1.4
 
 ## Packages
 RUN \
   mkdir -p /opt/atlassian &&\
-  curl -fsSL "http://confluence.goldpitcher.co.kr/download/attachments/165479323/atlassian-jira-software-${JIRA_VERSION}-jira-${JIRA_VERSION}.tar.gz"| tar -zxvf - --strip-components=1 -C /opt/atlassian
+  curl -fsSL "http://confluence.goldpitcher.co.kr/download/attachments/166036009/atlassian-jira-software-${JIRA_VERSION}-jira-${JIRA_VERSION}.tar.gz"| tar -zxvf - --strip-components=1 -C /opt/atlassian
 
 ## Configurations
 RUN \
