@@ -1,6 +1,6 @@
 NAME     = baselibrary/atlassian-jira
 REPO     = git@github.com:baselibrary/docker-atlassian-jira.git
-REGISTRY = thoughtworks.io
+REGISTRY = thoughtworks.ga
 VERSIONS = $(foreach df,$(wildcard */Dockerfile),$(df:%/Dockerfile=%))
 
 all: build 
